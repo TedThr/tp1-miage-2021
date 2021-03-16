@@ -65,6 +65,8 @@ Ensuite, on indique le nom de la base, ici postgres.
 
 *Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ?*
 
+todoItemRepository est null puisqu'il manque l'injection dans le todoListController. La meilleure façon de l'injecter est en utilisant l'annotation, c'est à dire : "@Inject"
+
 * Modifier le code en conséquence.
 
 * Tester vos endpoints avec un client REST.
@@ -129,7 +131,7 @@ On fait des tests d’intégrations
 
 *Que teste-on dans ce cas ?*
 
-On va tester la technologie, sachant qu’on doit en avoir qu’une. 
+On va tester la technologie.
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
