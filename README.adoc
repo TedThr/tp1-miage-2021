@@ -131,7 +131,7 @@ On fait des tests d’intégrations
 
 *Que teste-on dans ce cas ?*
 
-On va tester la technologie.
+On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemble tous les éléments ensemble. 
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
