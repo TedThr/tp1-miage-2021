@@ -2,12 +2,10 @@
 
 NOTE: TP de deux slots de 1h20
 
-## Nom du(des) étudiant(e)(s) de ce monôme/binôme 
-WARNING: NE PAS OUBLIER DE MENTIONNER LES DEUX NOMS SI VOUS ETES EN BINOME!
+## Trinôme d'étudiants : Chaker Mahdi, Kaci Walid et Thirion Teddy
 
-#XXX# (et #YYY#)
 
-Commentaires éventuels des étudiants : #XXXXXX#
+Commentaires éventuels des étudiants : N/A
 
 ## Pré-requis 
 
