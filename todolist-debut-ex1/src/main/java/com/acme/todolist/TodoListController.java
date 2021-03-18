@@ -25,23 +25,22 @@ public class TodoListController {
 
 	private static final String LATE = "[LATE!]";
 	private TodoItemRepository todoItemRepository;
-	private TodoItem item;
+
 	@Inject
 	public TodoListController(TodoItemRepository todoItemRepository) {
 		super();
 		this.todoItemRepository = todoItemRepository;
 	}
-	@Inject
+	
 	public TodoListController() {
-		this.item = new TodoItem(item.getId(), item.getTime(), item.getContent());
-		this.todoItemRepository.save(item);
+		super();		
 	}
+
 	@PostMapping("/todos")
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public void createTodoItem(@RequestBody TodoItem todoItem) {
-		// On déclare un todoItem
-		this.item = new TodoItem(item.getId(), item.getTime(), item.getContent());
-		this.todoItemRepository.save(item);
+		// On déclare un Todo Item
+		this.todoItemRepository.save(new TodoItem(todoItem.getId(), todoItem.getTime(), todoItem.getContent()));
 	}
 
 	@GetMapping("/todos")
