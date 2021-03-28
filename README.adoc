@@ -144,9 +144,9 @@ On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemb
 
 ### Exercice 3 TD :
 
-*Par constructeur :
+* Par constructeur :
 
-*La classe MailClient : *
+*La classe MailClient :*
 
 ```java
 class MailClient {
@@ -175,7 +175,7 @@ class SmtpServer {
 
 
 
-*Par setter :
+* Par setter :
 
 *La classe MailClient :*
 
@@ -213,7 +213,7 @@ class SmtpServer {
 
 
 
-*Par attribut :
+* Par attribut :
 
 *La classe MailClient :*
 
