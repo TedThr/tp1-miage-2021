@@ -148,7 +148,7 @@ On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemb
 
 La classe MailClient : 
 
-class MailClient {
+`class MailClient {
 	SmtpServer server ;
 	MessageFormatter ;
 	@Inject
@@ -156,21 +156,22 @@ class MailClient {
 		this.server = server; 
 this.formatter= formatter;
 	}
-}
+}`
+
 La classe SmtpServer : 
-class SmtpServer {
+`class SmtpServer {
 	Connexion connexion ;
 	@Inject
 	public SmtpServer (Connexion connexion) {
 		this.connexion = connexion ;
 	}
-}
+}`
 
 
 *Par setter :*
 
 La classe MailClient :
-class MailClient {
+`class MailClient {
 	SmtpServer server;
 	MessageFormatter formatter;
 
@@ -185,35 +186,35 @@ class MailClient {
 	public void setFormatter (MessageFormatter formatter) {
 		this.formatter = formatter;
 	}
-}
+}`
 
 La classe SmtpServer : 
-class SmtpServer {
+`class SmtpServer {
 	Connexion connexion;
 	public SmtpServer(){}
 	@Inject
 	public void setConnexion (Connexion connexion) {
 		this.connexion = connexion;
 	}
-}
+}`
 
 *Par attribut :*
 
 La classe MailClient :
-class MailClient {
+`class MailClient {
 
 	@Inject
 	SmtpServer server;
 
 	@Inject
 	MessageFormatter formatter;
-}
+}`
 
 La classe SmtpServer : 
-class SmtpServer {
+`class SmtpServer {
 	@Inject
 	Connexion connexion;
-}
+}`
 
 * MessageFormatter manipule des beans Message sans dépendances. Doit-on injecter l’objet Message ?
 
