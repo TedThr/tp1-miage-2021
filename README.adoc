@@ -147,6 +147,7 @@ On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemb
 *Par constructeur :*
 
 La classe MailClient : 
+
 class MailClient {
 	SmtpServer server ;
 	MessageFormatter ;
@@ -156,7 +157,7 @@ class MailClient {
 this.formatter= formatter;
 	}
 }
-La classe SmtpServer : 
+
 class SmtpServer {
 	Connexion connexion ;
 	@Inject
