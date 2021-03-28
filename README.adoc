@@ -144,11 +144,12 @@ On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemb
 
 ### Exercice 3 TD :
 
-*Par constructeur :*
+*Par constructeur :
 
-La classe MailClient : 
+*La classe MailClient : *
 
-`class MailClient {
+```java
+class MailClient {
 	SmtpServer server ;
 	MessageFormatter ;
 	@Inject
@@ -156,22 +157,30 @@ La classe MailClient :
 		this.server = server; 
 this.formatter= formatter;
 	}
-}`
+}
+```
 
-La classe SmtpServer : 
-`class SmtpServer {
+
+*La classe SmtpServer :* 
+
+```java
+class SmtpServer {
 	Connexion connexion ;
 	@Inject
 	public SmtpServer (Connexion connexion) {
 		this.connexion = connexion ;
 	}
-}`
+}
+```
 
 
-*Par setter :*
 
-La classe MailClient :
-`class MailClient {
+*Par setter :
+
+*La classe MailClient :*
+
+```java
+class MailClient {
 	SmtpServer server;
 	MessageFormatter formatter;
 
@@ -186,35 +195,47 @@ La classe MailClient :
 	public void setFormatter (MessageFormatter formatter) {
 		this.formatter = formatter;
 	}
-}`
+}
+```
 
-La classe SmtpServer : 
-`class SmtpServer {
+*La classe SmtpServer :* 
+
+```java
+class SmtpServer {
 	Connexion connexion;
 	public SmtpServer(){}
 	@Inject
 	public void setConnexion (Connexion connexion) {
 		this.connexion = connexion;
 	}
-}`
+}
+```
 
-*Par attribut :*
 
-La classe MailClient :
-`class MailClient {
+
+*Par attribut :
+
+*La classe MailClient :*
+
+```java
+class MailClient {
 
 	@Inject
 	SmtpServer server;
 
 	@Inject
 	MessageFormatter formatter;
-}`
+}
+```
 
-La classe SmtpServer : 
-`class SmtpServer {
+*La classe SmtpServer :*
+
+```java
+class SmtpServer {
 	@Inject
 	Connexion connexion;
-}`
+}
+```
 
 * MessageFormatter manipule des beans Message sans dépendances. Doit-on injecter l’objet Message ?
 
