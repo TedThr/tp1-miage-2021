@@ -157,7 +157,7 @@ class MailClient {
 this.formatter= formatter;
 	}
 }
-
+La classe SmtpServer : 
 class SmtpServer {
 	Connexion connexion ;
 	@Inject
@@ -215,6 +215,7 @@ class SmtpServer {
 	Connexion connexion;
 }
 
-MessageFormatter manipule des beans Message sans dépendances. Doit-on injecter l’objet Message ?
+* MessageFormatter manipule des beans Message sans dépendances. Doit-on injecter l’objet Message ?
+
 Il faut juste importer une librairie donc non, on ne doit pas injecter l’objet Message.
 
