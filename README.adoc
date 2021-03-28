@@ -142,8 +142,10 @@ On va tester la technologie et voir si tout fonctionne bien lorsque l'on rassemb
 =====
 
 
-Exercice 3 TD : 
-Par constructeur :
+### Exercice 3 TD :
+
+*Par constructeur :*
+
 La classe MailClient : 
 class MailClient {
 	SmtpServer server ;
@@ -164,7 +166,8 @@ class SmtpServer {
 }
 
 
-Par setter :
+*Par setter :*
+
 La classe MailClient :
 class MailClient {
 	SmtpServer server;
@@ -193,7 +196,8 @@ class SmtpServer {
 	}
 }
 
-Par attribut :
+*Par attribut :*
+
 La classe MailClient :
 class MailClient {
 
